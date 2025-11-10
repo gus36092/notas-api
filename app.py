@@ -4,7 +4,8 @@ app = Flask(__name__)
 
 @app.route("/ping")
 def ping():
-    return jsonify({"message": "vladi es el mas venenoso del mundo mundial for ever"})
+    return jsonify({"message": "vladi es el mas venenoso del mundo mundial for ever y crallador"})
 
 if __name__ == "__main__":
     app.run(debug=True)
+    
