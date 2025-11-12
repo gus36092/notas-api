@@ -2,10 +2,9 @@ from flask import Flask, jsonify
 
 app = Flask(__name__)
 
-@app.route("/ping")
-def ping():
-    return jsonify({"message": "Vlady-dev25 es el antidotoy Gustavo el mas poison del  mundo mundial for ever y cryador "})
+@app.route('/')
+def home():
+    return jsonify({"message": "Gustavo es el antídoto del mundo mundial for ever y Vladi es el creador venenoso"})
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     app.run(debug=True)
-    
