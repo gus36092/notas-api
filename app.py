@@ -6,6 +6,10 @@ app = Flask(__name__)
 def ping():
     return jsonify({"message": "4 es el antidoto del mundo mundial for ever y vladi es el crallador venenoso"})
 
+@app.route('/saludo')
+def saludo():
+    return jsonify({"mensaje": "Hola desde la nueva rama feature/saludo 👋"})
+
 if __name__ == "__main__":
     app.run(debug=True)
     
